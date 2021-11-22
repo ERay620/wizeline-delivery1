@@ -1,0 +1,16 @@
+{
+  "name": "todoist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome  ./pom/tests/positive_login_test.js"
+  },
+  "author": "Erol",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-xlsx": "^0.17.2",
+    "testcafe": "^1.17.1"
+  }
+}
