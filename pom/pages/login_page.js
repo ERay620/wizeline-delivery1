@@ -11,7 +11,7 @@ const invalidEmail =      XPathSelector(invalidEmailXPath);
 const blankPasswordXPath = '//span[text () = "Blank password."]'
 const blankPassword =      XPathSelector(blankPasswordXPath);
 
-const wrongEmailPasswordXPath = '//span[text () = "Blank password."]'
+const wrongEmailPasswordXPath = '//span[text () = "Wrong email or password."]'
 const wrongEmailPassword =      XPathSelector(wrongEmailPasswordXPath);
 
 

@@ -6,6 +6,7 @@ import todoist_page from '../pages/todoist_page';
 fixture `Negative Login feature test`
 .page   `${URLS.BASE_URL}`
 
+
 negativeDataSet.forEach(data => {
 
 
@@ -14,12 +15,8 @@ negativeDataSet.forEach(data => {
         .maximizeWindow()
         .click(loginPage.openLoginForm)
 
-     
-
         await loginPage.submitLoginForm(data.myUserName, data.myPassword )    
         await t.expect(todoist_page.addTask.exists).notOk()
-       
-       
   
      });
   

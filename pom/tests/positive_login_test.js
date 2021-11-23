@@ -10,13 +10,13 @@ test('As a user, I should be able to log in successfuly by providing valid crede
 
     await t
     .maximizeWindow()
-    .click(loginPage.submitLogin)
+    .click(loginPage.openLoginForm)
 
-    await loginPage.submitLoginForm(CREDENTIALS.STANDART_USER.MYUSERNAME, CREDENTIALS.STANDART_USER.PASSWORD )
+    await loginPage.submitLoginForm(CREDENTIALS.STANDART_USER.MYUSERNAME, CREDENTIALS.STANDART_USER.PASSWORD)
 
-    await t.expect(todoist_page.addTask.exists).ok()
+    await t.wait(3000).expect(todoist_page.addTask.exists).ok()
    
-   
+
     console.log('This is the content of an element from from the homePage: '
      + await todoist_page.addTask.textContent)
        

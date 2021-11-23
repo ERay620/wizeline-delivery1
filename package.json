@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome  ./pom/tests/ddt_negative_login_test.js"
+    "test": "testcafe chrome  ./pom/tests/negative_login_test.js"
   },
   "author": "Erol",
   "license": "ISC",
