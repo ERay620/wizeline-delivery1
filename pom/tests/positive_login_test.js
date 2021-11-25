@@ -14,11 +14,11 @@ test('As a user, I should be able to log in successfuly by providing valid crede
 
     await loginPage.submitLoginForm(CREDENTIALS.STANDART_USER.MYUSERNAME, CREDENTIALS.STANDART_USER.PASSWORD)
 
-    await t.wait(3000).expect(todoist_page.addTask.exists).ok()
+    await t.wait(3000).expect(todoist_page.addedTaskWithPlus.exists).ok()
    
 
     console.log('This is the content of an element from from the homePage: '
-     + await todoist_page.addTask.textContent)
+     + await todoist_page.addedTaskWithPlus.textContent)
        
 })
 

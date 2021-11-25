@@ -17,11 +17,11 @@ dataSet.forEach(data => {
     
         await loginPage.submitLoginForm(data.myUserName, data.myPassword )
     
-        await t.expect(todoist_page.addTask.exists).ok()
+        await t.wait(3000).expect(todoist_page.addedTaskWithPlus.exists).ok()
        
        
         console.log('This is the content of an element from from the homePage: '
-         + await todoist_page.addTask.textContent)
+         + await todoist_page.addedTaskWithPlus.textContent)
   
      });
   

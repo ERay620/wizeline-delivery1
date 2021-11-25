@@ -16,7 +16,7 @@ negativeDataSet.forEach(data => {
         .click(loginPage.openLoginForm)
 
         await loginPage.submitLoginForm(data.myUserName, data.myPassword )    
-        await t.expect(todoist_page.addTask.exists).notOk()
+        await t.wait(3000).expect(todoist_page.addedTaskWithPlus.exists).notOk()
   
      });
   
