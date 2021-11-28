@@ -1,9 +1,8 @@
 import { CREDENTIALS, URLS } from '../data/constants'
 import loginPage from '../pages/login_page'
-import todoist_page from '../pages/todoist_page';
 
 
-fixture `Negative Login feature test`
+fixture `Negative Login feature test. As a user, I should not be able to log in with invalid credentils`
 .page   `${URLS.BASE_URL}`
 
 test('As a user, I should not be able to log in with empty  credentilas', async t => {
