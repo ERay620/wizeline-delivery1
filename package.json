@@ -1,29 +1,31 @@
 {
   "name": "todoist",
   "version": "1.0.0",
-  "description": "",
+  "description": "My SMART Goal;\r Specific:  Measurable: Attainable, attractive  Realistic, Relevant: Time-bound: \r -I would like to get broad knowledge about testcafe framework  by following up the best practices such as design patterns (POM), data provider, web element locators and test results report , so that I should be bale automate any test case scenario by using testcafe framework.\r -I should be able to create an automation project from scratch\r -I should complete my Bootcamp deliverables through the course of the following four weeks.",
   "main": "index.js",
   "scripts": {
-    "test01": "testcafe chrome  ./pom/tests/ddt_negative_login_test.js",  
-    "test02": "testcafe chrome  ./pom/tests/ddt_positive_login_test.js",
-  	
-
-    "test1": "testcafe chrome  ./pom/tests/negative_login_test.js",
-    "test2": "testcafe chrome  ./pom/tests/new-project.js",
-    "test3": "testcafe chrome  ./pom/tests/newtask-today.js",
-    "test4": "testcafe chrome  ./pom/tests/newtask-tomorrow.js",
-    "test5": "testcafe chrome  ./pom/tests/positive_login_test.js",
-    "test6": "testcafe chrome  ./pom/tests/ten-newtask-today.js",
-
-    "test7": "testcafe chrome  ./pom/tests"
-   
- 
+    
+    "Chrome": "testcafe chrome  ./pom/tests",
+    "Chrome-Headles": "testcafe chrome:headless  ./pom/tests",
+    "Chrome-Headles-MultiBrowser": "testcafe chrome:headless ./pom/tests --concurrency 3",
+    "Firefox-MultiBrowser": "testcafe firefox  ./pom/tests --concurrency 3 ",
+    "Edge-MultiBrowser": "testcafe edge ./pom/tests --concurrency 3"
   },
   "author": "Erol",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
+    "express": "^4.17.1",
     "node-xlsx": "^0.17.2",
     "testcafe": "^1.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ERay620/wizeline-delivery1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ERay620/wizeline-delivery1/issues"
+  },
+  "homepage": "https://github.com/ERay620/wizeline-delivery1#readme",
+  "devDependencies": {}
 }

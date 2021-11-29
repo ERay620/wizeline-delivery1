@@ -25,6 +25,7 @@ ENV: https://todoist.com/app/today
 Users: 
 1- kifmyvz@gmail.com / yavuz7575
 2- aytemurerol1@gmail.com / yavuz7575
+
 Test Suites
 1-	"test": "testcafe chrome  ./pom/tests/positive_login_test.js"
 2-	"test": "testcafe chrome  ./pom/tests/negative_login_test.js"
