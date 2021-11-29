@@ -5,10 +5,10 @@ import XPathSelector from '../data/xpath-selector'
 
 
 
-fixture `Positive Login feature test`
+fixture `As a user, I should be able to creta a new task for today`
 .page   `${URLS.BASE_URL}`
 
-test('As a user, I should be able to log in successfuly by providing valid credentilas', async t => {
+test('As a user, I should be able to creta a new task for today', async t => {
 
     await t
     .maximizeWindow()
@@ -16,43 +16,39 @@ test('As a user, I should be able to log in successfuly by providing valid crede
 
     await loginPage.submitLoginForm(CREDENTIALS.STANDART_USER.MYUSERNAME, CREDENTIALS.STANDART_USER.PASSWORD)
 
-   // await t.wait(3000).expect(todoistPage.addTask.exists).ok()
-    
-  
-      await todoistPage.typeTaskNameDescription()
+    await todoistPage.createTasks(1)
+    await todoistPage.deletaAllMyTask(1)
 
-
-    
-  
-      const todayDateXPath = '//button[@aria-label="2021-11-25"]/span'
-      const todayDate = XPathSelector(todayDateXPath);
-
-      await todoistPage.openCalendarTable()
-
-      await t.click(todayDate)
-
-      await todoistPage.submitTask()
-
-      await t.wait(3000).expect(todoistPage.addedTask.exists).ok().wait(3000)
-   
-
-   // console.log('This is the content of an element from from the homePage: '
-   // + await todoistPage.addTask.textContent)
-
-   
-    //t.todoistPage.submitTaskToday()
-
-   
-
-/*
-
-
-    
-    
     await t
-    .click(todayDate)
-    click(todoistPage.addTaskButton)*/
+    .click(todoistPage.navigateInbox)
+    .expect(todoistPage.allClear.exists).ok()
+   
+
 
     
 })
+
+/*
+ 
+      await todoistPage.typeTaskNameDescription()
+  
+      
+      await t. click(todoistPage.addTaskButton)
+
+      .wait(3000).expect(todoistPage.addedTask.exists).ok()
+
+      console.log('This is the content of an element from from the homePage: '
+     + await todoistPage.addedTask.textContent)
+
+     await t.
+     click(todoistPage.taskContent)
+     .click(todoistPage.moreActions)
+     .click(todoistPage.deleteTaskModal)
+     .click(todoistPage.deletTask).wait(2000)
+     .click(todoistPage.navigateInbox)
+     .expect(todoistPage.allClear.exists).ok()
+
+     console.log('This is the content of an element from from the homePage: '
+     + await todoistPage.allClear.textContent)
+*/
 

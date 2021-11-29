@@ -1,4 +1,4 @@
-import { CREDENTIALS, URLS, dataSet, negativeDataSet } from '../data/constants'
+import { URLS, negativeDataSet } from '../data/constants'
 import loginPage from '../pages/login_page';
 import todoist_page from '../pages/todoist_page';
 

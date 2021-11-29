@@ -3,20 +3,17 @@ import loginPage from '../pages/login_page'
 import todoistPage from '../pages/todoist_page';
 
 
-fixture `Positive Login feature test`
+fixture `As a user, I should be able to to creta a new Project`
 .page   `${URLS.BASE_URL}`
 
-test('As a user, I should be able to log in successfuly by providing valid credentilas', async t => {
+test('As a user, I should be able to to creta a new Project', async t => {
 
     await t
     .maximizeWindow()
     .click(loginPage.openLoginForm)
 
     await loginPage.submitLoginForm(CREDENTIALS.STANDART_USER.MYUSERNAME, CREDENTIALS.STANDART_USER.PASSWORD)
-
-    await t.wait(3000).expect(todoistPage.plusAddTaskIcon.exists).ok().wait(3000)
-   
+    await todoistPage.ceateNewProject('myprojectName')
  
-       
 })
 

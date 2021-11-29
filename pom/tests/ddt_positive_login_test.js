@@ -1,4 +1,4 @@
-import { CREDENTIALS, URLS, dataSet } from '../data/constants'
+import { URLS, dataSet } from '../data/constants'
 import loginPage from '../pages/login_page'
 import todoist_page from '../pages/todoist_page';
 
@@ -20,7 +20,7 @@ dataSet.forEach(data => {
         await t.wait(3000).expect(todoist_page.addedTaskWithPlus.exists).ok()
        
        
-        console.log('This is the content of an element from from the homePage: '
+        console.log('This is the content of an element from  the homePage: '
          + await todoist_page.addedTaskWithPlus.textContent)
   
      });
