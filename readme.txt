@@ -26,7 +26,10 @@ Users:
 1- kifmyvz@gmail.com / yavuz7575
 2- aytemurerol1@gmail.com / yavuz7575
 
-Test Suites
+
+Execution Recording: https://drive.google.com/drive/folders/12FddB6ceiplxxEffNNwrqXlzg1FJuGea?usp=sharing
+
+Test Cases:
 1-	"test": "testcafe chrome  ./pom/tests/positive_login_test.js"
 2-	"test": "testcafe chrome  ./pom/tests/negative_login_test.js"
 3-	"test": "testcafe chrome  ./pom/tests/ddt_positive_login_test.js"

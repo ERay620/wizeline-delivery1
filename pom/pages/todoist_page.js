@@ -31,13 +31,13 @@ class Todoist {
         this.addTaskButton = Selector('.reactist_button').withText('Add task')
         this.upcoming = Selector('.item_content').withText('Upcoming')
         this.taskContent = Selector('.markdown_content').withText('rr')
-        this.projectsQuickAdd  = Selector('[aria-label="Add Project"] > svg')  //******/
+        this.projectsQuickAdd  = Selector('[aria-label="Add Project"] > svg')
         this.projectName = Selector('#edit_project_modal_field_name')  
         this.colorSelector = Selector('.color_dropdown_select__name')
         this.myClcolor = Selector('.color_dropdown_select__name').withText('Blue')
         this.addToFavorites = Selector('.reactist_switch')
         this.addNewProjectButton = Selector('[class="reactist_modal_box__actions"] >button ').withText('Add')
-        this.isDidplayedMyProjectName  = Selector('[class="simple_content"]').withText('myprojectName') //******/
+        this.isDidplayedMyProjectName  = Selector('[class="simple_content"]').withText('myprojectName')
         this.addedProject = Selector('.text').withText('myprojectName')
         this.deleteProjectModal = Selector('#menu_delete_text').withText('Delete project')
         this.deleteProject = Selector('[class="ist_button ist_button_red"]').withText('Delete')
