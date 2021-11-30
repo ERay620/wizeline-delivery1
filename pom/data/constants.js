@@ -29,10 +29,6 @@ const excelSheetData = excelSheet.data
 const headers = excelSheetData.shift()
 
 
-//console.log(excelSheet)
-
-
-
 export const dataSet = excelSheetData.map((row) => {
 
    const user = {};
@@ -41,8 +37,6 @@ export const dataSet = excelSheetData.map((row) => {
    return user;
 
 });
-
-//console.log(dataSet)
 
 
 

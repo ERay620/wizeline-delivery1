@@ -8,13 +8,13 @@ const taskName = XPathSelector(taskNameXPath);
 const taskDescriptionXPath = '//textarea[@class="task_editor__description_field no-focus-marker"]'
 const taskDescription = XPathSelector(taskDescriptionXPath);
 
-const openCalendarXPath = '//span[@class="date date_today"]'
-const openCalendar = XPathSelector(openCalendarXPath);
+//const openCalendarXPath = '//span[@class="date date_today"]'
+//const openCalendar = XPathSelector(openCalendarXPath);
 
 const addedTaskXPath = '//div[text() ="ER"]'  
 const addedTask = XPathSelector(addedTaskXPath);
 
-const addedTaskWithPlusXPath = '//button[@data-add-task-navigation-element="true"]'    // + add task 
+const addedTaskWithPlusXPath = '//button[@data-add-task-navigation-element="true"]' 
 const addedTaskWithPlus = XPathSelector(addedTaskWithPlusXPath);
 
 class Todoist {
@@ -22,7 +22,7 @@ class Todoist {
         this.addTask =Selector('button').withAttribute('class', 'empty-state-button').withText('Add a task');
         this.taskName = Selector(taskName)
         this.taskDescription = Selector(taskDescription)
-        this.openCalendar = Selector('openCalendar')     //  [class="item_due_selector icon_pill"] > span
+        //this.openCalendar = Selector('openCalendar')     
         this.plusAddTaskIcon = Selector ('.plus_add_button')
         this.addedTask = Selector(addedTask)
         this.addedTaskWithPlus = Selector(addedTaskWithPlus)
@@ -37,7 +37,7 @@ class Todoist {
         this.myClcolor = Selector('.color_dropdown_select__name').withText('Blue')
         this.addToFavorites = Selector('.reactist_switch')
         this.addNewProjectButton = Selector('[class="reactist_modal_box__actions"] >button ').withText('Add')
-        this.isDidplayedMyProjectName  = Selector('[aria-label="myprojectName, 0 tasks"]')
+        this.isDidplayedMyProjectName  = Selector('[class="simple_content"]').withText('myprojectName')
         this.addedProject = Selector('.text').withText('myprojectName')
         this.deleteProjectModal = Selector('#menu_delete_text').withText('Delete project')
         this.deleteProject = Selector('[class="ist_button ist_button_red"]').withText('Delete')
@@ -91,7 +91,6 @@ class Todoist {
     async createTasks(taskNumber) {
 
         for(let i=1; i<=taskNumber ;i++) {
-            //typeTaskNameDescriptionTwo('T'+i,'My Task Description is')
             await t
             .click(this.addedTaskWithPlus)
             .click(this.taskName)
@@ -134,13 +133,3 @@ class Todoist {
 
 }
 export default new Todoist
-
-
-/*
-  async openCalendarTable() {
-        await t
-        .click(openCalendar)
-
-    }
-
-    */

@@ -1,7 +1,6 @@
 import { Selector, t} from 'testcafe'
 import XPathSelector from '../data/xpath-selector'
 
-//const getStartedXPath = '(//a[text() = "Get Started"])[1]'
 const loginXPath = '(//a[text() ="Log in"])[1]'
 const openLoginForm =      XPathSelector(loginXPath);
 
