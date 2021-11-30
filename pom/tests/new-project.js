@@ -3,7 +3,7 @@ import loginPage from '../pages/login_page'
 import todoistPage from '../pages/todoist_page';
 
 
-fixture `As a user, I should be able to to creta a new Project`
+fixture `Fixture: Create a new Project`
 .page   `${URLS.BASE_URL}`
 
 test('As a user, I should be able to to creta a new Project', async t => {

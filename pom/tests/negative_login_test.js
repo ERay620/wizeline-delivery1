@@ -2,7 +2,7 @@ import { CREDENTIALS, URLS } from '../data/constants'
 import loginPage from '../pages/login_page'
 
 
-fixture `Negative Login feature test. As a user, I should not be able to log in with invalid credentils`
+fixture `Fixture: Negative Login to validate the warning messages for unsuccessful Logins`
 .page   `${URLS.BASE_URL}`
 
 test('As a user, I should not be able to log in with empty  credentilas', async t => {

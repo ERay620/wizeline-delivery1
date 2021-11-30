@@ -3,7 +3,7 @@ import loginPage from '../pages/login_page'
 import todoistPage from '../pages/todoist_page';
 
 
-fixture `As a user, I should be able to create 10 diffrent task for today then delete`
+fixture `Fixture: Create ten new tasks then delete`
 .page   `${URLS.BASE_URL}`
 
 
