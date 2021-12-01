@@ -3,7 +3,7 @@ import loginPage from '../pages/login_page'
 import todoistPage from '../pages/todoist_page';
 
 
-fixture `As a user, i should be able to create a task for tomorrow`
+fixture `Fixture: Create a new task for tomorrow`
 .page   `${URLS.BASE_URL}`
 
 test('As a user, I should be able to to creta a new task for tomorrow', async t => {

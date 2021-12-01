@@ -3,7 +3,7 @@ import loginPage from '../pages/login_page';
 import todoist_page from '../pages/todoist_page';
 
 
-fixture `Negative Login feature test`
+fixture `Fixture: Negative Login Test`
 .page   `${URLS.BASE_URL}`
 
 

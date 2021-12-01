@@ -29,6 +29,17 @@ Users:
 
 Execution Recording: https://drive.google.com/drive/folders/12FddB6ceiplxxEffNNwrqXlzg1FJuGea?usp=sharing
 
+In this Project, we have 17 TCs. You can find the details in the below
+-	4 TCs “Fixture: Positive Login Test:”  We use for different valid user which we stored then in an Excel file (DDT Concept). The Excel file is under the “data” folder
+-	4 TCs “Fixture: Negative Login Test “We use for different invalid user which we stored then in an Excel file (DDT Concept). The Excel file is under the “data” folder
+-	3TCs “Fixture: Negative Login to validate the warning messages for unsuccessful Logins 
+-	1 TC “Fixture: Create a new Project”
+-	1 TC “Fixture: Create a new task for today”
+-	1 TC “Fixture: Create a new task for tomorrow”
+-	1 TC “Fixture: Positive Login with Environment Variables”
+-	2 TCs “Fixture: Create ten new tasks then delete
+
+
 Test Cases:
 1-	"test": "testcafe chrome  ./pom/tests/positive_login_test.js"
 2-	"test": "testcafe chrome  ./pom/tests/negative_login_test.js"

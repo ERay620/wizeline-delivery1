@@ -4,7 +4,7 @@ import todoist_page from '../pages/todoist_page';
 
 
 
-fixture `Positive Login feature test`
+fixture `Fixture: Positive Login Test`
 .page   `${URLS.BASE_URL}`
 
 dataSet.forEach(data => {
